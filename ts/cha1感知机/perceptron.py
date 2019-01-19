@@ -42,6 +42,9 @@ class Perceptron(object):
     def update(self, x, y):
         self.w += self.lr * np.dot(y, x)
         self.b += self.lr * y
+
+    def update1(self, x, y):
+        return self.lr * np.dot(y, x), self.lr * y
     
     def judge(self, x, y):
         w = self.w
@@ -58,14 +61,21 @@ class Perceptron(object):
         wrong_sample_num = 0
         while wrong_sample:
             wrong_sample_num = 0
+            dw_sum = 0
+            db_sum = 0
+            dw = 0
+            db = 0
             for i in range(tran_len):
                 if self.judge(self.x[i], self.y[i]):
                     print('错误样本', self.x[i], self.y[i])
-                    # 错误样本
-                    self.update(self.x[i], self.y[i])
+                    [dw, db] = self.update1(self.x[i], self.y[i])
+                    dw_sum += dw
+                    db_sum += db
                     wrong_sample_num += 1
                 if not wrong_sample_num:
                     wrong_sample = False
+            self.w += dw_sum / wrong_sample_num
+            self.b += db_sum / wrong_sample_num
             
     
 
