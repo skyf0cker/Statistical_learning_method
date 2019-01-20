@@ -29,22 +29,37 @@ def data_produce():
 
 def perceptron(x):
     
-    w = np.zeros(2)
+    w = np.ones(2)
     b = 0
-    a = 0.1
+    a = 3
+    all_true = False
 
-
-    for data_dict in x:
-        
-        x_data = np.array(data_dict['data'])
-
-        judge = data_dict['flag']*(np.dot(x_data,w) + b)
-        print('judge',judge)        
-        while judge < 0:
-            w = w + a*data_dict['flag']*np.array(data_dict['data'])
-            print('weight:',w)
-            b = b + a*data_dict['flag']
+    while(not all_true):
+        update_w = 0
+        update_b = 0
+        wrong_num = 0
+        for data_dict in x:
+        # ------------
+        # 遍历所有的点
+        # ------------
+            x_data = np.array(data_dict['data'])
             judge = data_dict['flag']*(np.dot(x_data,w) + b)
+            if judge < 0:
+                wrong_num += 1
+                print('wrong:', data_dict['data'])
+                update_w += data_dict['flag']*np.array(data_dict['data'])
+                update_b += data_dict['flag']
+
+        print('wrong_num',wrong_num)
+        if wrong_num == 0:
+            all_true = True
+            break
+        w = w + a*update_w/wrong_num
+        b = b + a*update_b/wrong_num
+        print('w:',w)
+        print('b',b)
+
+
 
     return w,b
 
@@ -53,7 +68,7 @@ if __name__ == "__main__":
     w,b = perceptron(x)
     testx1 = -1000
     testy1 = testx1 * w[0] / (-1 * w[1]) + b/(-1 * w[1])
-    testx2 = 1000
+    testx2 = 3000
     testy2 = testx2 * w[0] / (-1 * w[1]) + b/(-1 * w[1])
 
     x1 = np.random.randint(0,1000,50)
