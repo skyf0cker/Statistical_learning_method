@@ -60,26 +60,14 @@ class Perceptron(object):
         wrong_sample = True
         wrong_sample_num = 0
         while wrong_sample:
-            if wrong_sample_num == 0:
-                print('wrong_sample_num spbb', wrong_sample_num)
             wrong_sample_num = 0
-            dw_sum = 0
-            db_sum = 0
-            dw = 0
-            db = 0
             for i in range(tran_len):
                 if self.judge(self.x[i], self.y[i]):
-                    [dw, db] = self.update1(self.x[i], self.y[i])
-                    dw_sum += dw
-                    db_sum += db
+                    self.update(self.x[i], self.y[i])
                     wrong_sample_num += 1
-                print('wrong_sample_num', wrong_sample_num)
-                if not wrong_sample_num:
-                    print('wrong_sample_num sp', wrong_sample_num)
-                    wrong_sample = False
-            if wrong_sample_num != 0:
-                self.w += dw_sum / wrong_sample_num
-                self.b += db_sum / wrong_sample_num
+            if not wrong_sample_num:
+                wrong_sample = False
+
             
     
 
@@ -88,8 +76,9 @@ def main():
     data = generator_data()
     p = Perceptron(data)
     p.train()
-    # w = p.w
-    # b = p.b
+    w = p.w
+    b = p.b
+    print(w, b)
     # plt.plot([0, 130], [325, 0])
     # plt.show()
     # testx1 = 0
