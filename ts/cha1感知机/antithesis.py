@@ -9,11 +9,11 @@ def generator_data():
         'y': []
     }
     np.random.seed(1)
-    x1 = np.random.randint(0, 100, 50)
-    y1 = np.random.randint(0, 100, 50)
+    x1 = np.random.randint(-50, 50, 50)
+    y1 = np.random.randint(-50, 50, 50)
 
-    x2 = np.random.randint(100, 200, 50)
-    y2 = np.random.randint(100, 200, 50)
+    x2 = np.random.randint(50, 150, 50)
+    y2 = np.random.randint(50, 150, 50)
 
     point_x1 = np.hstack((x1, x2))
     # print(len(point_x))
@@ -44,8 +44,10 @@ class DualPerceptron(object):
         print('alpha len', self.alpha.shape)
         self.b = 0
         self.lr = 1
-        self.Gram = self.x1 * self.x1.T + self.x2 * self.x2.T
+        self.Gram = self.x1.T * self.x1 + self.x2.T * self.x2
+        self.Gram1 = self.x1 * self.x1.T + self.x2 * self.x2.T
         print('self.Gram', self.Gram.shape)
+        print('Gram1', self.Gram1.shape)
 
     def update(self, idx):
         # print('update idx', idx)
@@ -60,10 +62,10 @@ class DualPerceptron(object):
         # print('self.Gram[:, idx]', self.Gram[:, idx].reshape(1, 3).shape)
         _l = self.Gram.shape[0]
         _sum = np.sum(self.Gram[:, idx].reshape(1, _l) * alpha_y) + self.b
-        print('_sum', _sum, y)
+        # print('_sum', _sum, y)
         # print('_sum', _sum)
         if y * _sum <= 0:
-            print('错误样本', idx)
+            # print('错误样本', idx)
             return True
         # print('不是错误样本', idx)
         return False

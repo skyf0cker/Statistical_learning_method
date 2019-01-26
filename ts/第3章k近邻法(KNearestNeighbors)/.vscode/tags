@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+k.py	../k.py	1;"	kind:file	line:1
+KdNode	../k.py	/^class KdNode:$/;"	kind:class	line:4
+__init__	../k.py	/^    def __init__(self, axis, dom, left, right):$/;"	kind:member	line:5
+KdTree	../k.py	/^class KdTree(object):$/;"	kind:class	line:12
+__init__	../k.py	/^    def __init__(self):$/;"	kind:member	line:13
+main	../k.py	/^def main():$/;"	kind:function	line:16
+utils.py	../utils.py	1;"	kind:file	line:1
+GeneraterData	../utils.py	/^class GeneraterData(object):$/;"	kind:class	line:6
+__init__	../utils.py	/^    def __init__(self):$/;"	kind:member	line:7
+mul_cla	../utils.py	/^    def mul_cla(self, rad_seed=1, cla=2, num=50):$/;"	kind:member	line:9
+ser_point	../utils.py	/^    def ser_point(self, rad_seed=1, num=100, max_number=200, min_number=0):$/;"	kind:member	line:32
+DrawTool	../utils.py	/^class DrawTool(object):$/;"	kind:class	line:43
+__init__	../utils.py	/^    def __init__(self):$/;"	kind:member	line:44
+main	../utils.py	/^def main():$/;"	kind:function	line:48
