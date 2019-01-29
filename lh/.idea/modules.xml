@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Statistical_learning_method.iml" filepath="$PROJECT_DIR$/.idea/Statistical_learning_method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lh.iml" filepath="$PROJECT_DIR$/.idea/lh.iml" />
     </modules>
   </component>
 </project>

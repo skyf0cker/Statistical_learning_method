@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93636e63-9c0b-4e25-88e0-a4e6ba76b5e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Statistical_learning_method.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Statistical_learning_method.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/Figure_1-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/lh/Figure_1-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/Figure_1-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/lh/Figure_1-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/antithesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/lh/antithesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/antithesis2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lh/antithesis2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/find-the-nearest-point-with-kdtree.md" beforeDir="false" afterPath="$PROJECT_DIR$/lh/find-the-nearest-point-with-kdtree.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/knn.png" beforeDir="false" afterPath="$PROJECT_DIR$/lh/knn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/knn8.png" beforeDir="false" afterPath="$PROJECT_DIR$/lh/knn8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/knn_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lh/knn_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/lh/stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lh/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/lh/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/cha1感知机/antithesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/ts/cha1感知机/antithesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/cha1感知机/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/ts/cha1感知机/perceptron.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lh/perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2528">
+            <state>
               <caret line="80" column="14" selection-start-line="73" selection-start-column="4" selection-end-line="80" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -30,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lh/antithesis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state>
               <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -42,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lh/antithesis2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="110" column="35" lean-forward="true" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+            <state relative-caret-position="3630">
+              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -59,6 +78,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -81,28 +101,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Statistical_learning_method" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Statistical_learning_method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Statistical_learning_method" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Statistical_learning_method" type="462c0819:PsiDirectoryNode" />
-              <item name="lh" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="/usr/bin/git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -203,6 +206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="41" width="1853" height="1039" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18636614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -366,7 +370,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lh/perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2528">
+        <state>
           <caret line="80" column="14" selection-start-line="73" selection-start-column="4" selection-end-line="80" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -376,7 +380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lh/antithesis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state>
           <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -386,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lh/antithesis2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="110" column="35" lean-forward="true" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        <state relative-caret-position="3630">
+          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
