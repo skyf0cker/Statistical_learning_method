@@ -20,4 +20,3 @@ if __name__ == "__main__":
 	# print(d.data)
 	d.compare_features()
 	tree = d.planet_tree(d.data[0])
-	print(tree)
