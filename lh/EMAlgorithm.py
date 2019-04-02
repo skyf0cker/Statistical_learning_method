@@ -6,7 +6,7 @@ class EmAlgorithm:
     Implements of EM algorithm
     """
     def __init__(self, data, models_num):
-        
+
         self.data = np.array(data)
         self.data_num = len(data)
         self.models_num = models_num
@@ -43,7 +43,7 @@ class EmAlgorithm:
             print(i)
             self.compute_gama()
             self.update()
-
+        print("----------------------------")
         print("alpha:", self.alpha)
         print("mu:", self.mu)
         print("theta:", self.theta)
