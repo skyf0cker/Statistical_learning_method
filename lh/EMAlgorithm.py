@@ -6,13 +6,12 @@ class EmAlgorithm:
     Implements of EM algorithm
     """
     def __init__(self, data, models_num):
-        # self.Responsivity
+        
         self.data = np.array(data)
         self.data_num = len(data)
         self.models_num = models_num
         self.mu = np.array([[1,2]]).T
         self.theta = np.array([[1,1]]).T
-        # self.alpha = np.array([1/self.models_num for i in range(self.models_num)]).reshape((1,self.models_num))
         self.alpha = np.array([0.1, 0.9],dtype=float).reshape(1,2)
         self.gama = np.zeros((self.models_num, self.data_num))
         self.max_iters = 500
